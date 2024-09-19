@@ -1,0 +1,110 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f5; /* Світлий фон */
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Центрування по горизонталі */
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box; /* Враховуємо padding у висоті */
+}
+
+h2 {
+  color: #4b0082; /* Глибокий темно-фіолетовий */
+  text-align: center;
+  font-size: 36px; /* Збільшений розмір шрифту */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 30px;
+  border: 3px solid black;
+  background-color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Легка тінь для ефекту глибини */
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.95); /* Прозорий білий фон */
+  padding: 40px;
+  padding-top: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Виражена тінь */
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Відступ між формою і заголовком */
+}
+
+label {
+  margin-bottom: 5px;
+  color: #4b0082;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="date"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f4f4f9;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus {
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(75, 0, 130, 0.3);
+}
+
+input[type="email"]:hover,
+input[type="text"]:hover,
+input[type="date"]:hover,
+input[type="password"]:hover {
+  background-color: #eaeaf1;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #5a0095;
+  transform: translateY(-2px);
+}
+
+.form-agreement {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+a {
+  color: #4b0082;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
